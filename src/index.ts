@@ -1,2 +1,4 @@
-export { Button } from './components/Button';
 import './index.css';
+
+export { Button } from './components/Button';
+export { Typograpy } from './components/Typograpy';
