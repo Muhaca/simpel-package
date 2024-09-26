@@ -1,5 +1,5 @@
 {
-  "name": "simpe-package",
+  "name": "@muhaca/simple-package",
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,9 +11,20 @@
     "dev": "tsc --emitDeclarationOnly",
     "build": "npm run dev && node build.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Muhaca/simpel-package.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "typescript"
+  ],
+  "author": "Muhamad Casdi",
+  "license": "MIT",
   "description": "",
   "dependencies": {
     "react": "^18.3.1",
