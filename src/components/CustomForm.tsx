@@ -1,23 +1,18 @@
 import * as React from 'react';
 import { DragAndDrop } from './DragAndDrop';
-
-interface Item {
-    label: string;
-    property: string;
-}
+import { Item } from '../utils/type/typeInterface';
 
 interface Props extends React.CanvasHTMLAttributes<HTMLDivElement> {
     className: string,
-    state: Item[],
-    setState: React.Dispatch<React.SetStateAction<Item[]>>
+    state: string[],
+    setState: React.Dispatch<React.SetStateAction<string[]>>
 }
 
 export const CustomForm: React.FC<Props> = ({ state, setState }) => {
 
-    const handleDropForm = (data: Item[]) => {
+    const handleDropForm = (data: string[]) => {
         setState(data);
     };
-
 
     const renderItem = (item: Item, index: number) => {
         return (

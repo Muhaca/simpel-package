@@ -1,14 +1,9 @@
 import * as React from 'react';
 
-interface Item {
-    label: string;
-    property: string;
-}
-
 interface DragAndDropProps {
-    onDrop: (updatedItems: Item[]) => void;
-    itemList: Item[];
-    draggable: (item: Item, index: number) => React.ReactNode;
+    onDrop: (updatedItems: string[]) => void;
+    itemList: string[];
+    draggable: (item: any, index: number) => React.ReactNode;
     style?: React.CSSProperties;
     className: string,
     disabled?: boolean;
