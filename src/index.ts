@@ -1,6 +1,9 @@
 import './styles/index.css';
 
 export { Button } from './components/Button';
-export { Typograpy } from './components/Typograpy';
-export { DragAndDrop } from './components/DragAndDrop';
-export { CustomForm } from './components/CustomForm';
+export { Select } from './components/Select';
+export { Input } from './components/Input';
+
+
+export { DragAndDrop } from './components/form/DragAndDrop';
+export { CustomForm } from './components/form/CustomForm';

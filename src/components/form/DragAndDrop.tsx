@@ -5,11 +5,11 @@ interface DragAndDropProps {
     itemList: string[];
     draggable: (item: any, index: number) => React.ReactNode;
     style?: React.CSSProperties;
-    className: string,
+    className?: string,
     disabled?: boolean;
 }
 
-export const DragAndDrop: React.FC<DragAndDropProps> = ({ onDrop, itemList, draggable, style, disabled = false, className, ...props }) => {
+export const DragAndDrop: React.FC<DragAndDropProps> = ({ onDrop, itemList = [], draggable, style, disabled = false, className, ...props }) => {
 
     const handleDragStart = (e: React.DragEvent<HTMLDivElement>, position: number) => {
         e.dataTransfer.setData('position', position.toString());
@@ -35,7 +35,7 @@ export const DragAndDrop: React.FC<DragAndDropProps> = ({ onDrop, itemList, drag
         itemList.length > 0 ? itemList.map((item, index) => (
             <div
                 key={index}
-                className={`w-full flex items-center gap-1 bg-slate-900 border rounded p-2 hover:bg-[e0e0e0] hover:cursor-move active:cursor-grabbing bg-[e0e0e0] ${className}`}
+                className={`w-full flex items-center gap-1 border rounded p-2 hover:bg-[#e0e0e0] hover:cursor-move active:cursor-grabbing bg-[#e0e0e0] ${className}`}
                 draggable={!disabled}
                 onDragStart={(e) => handleDragStart(e, index)}
                 onDragOver={(e) => handleDragOver(e)}
