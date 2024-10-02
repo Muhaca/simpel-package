@@ -1,20 +1,20 @@
-CustomForm Component
+# CustomForm Component
 
-<CustomForm /> adalah komponen yang dinamis dan fleksibel untuk membuat form berdasarkan konfigurasi properti yang diberikan. Komponen ini memudahkan Anda untuk membuat form dengan berbagai tipe input seperti text, select, number, date, radio, dan checkbox.
+CustomForm adalah komponen yang dinamis dan fleksibel untuk membuat form berdasarkan konfigurasi properti yang diberikan. Komponen ini memudahkan Anda untuk membuat form dengan berbagai tipe input seperti text, select, number, date, radio, dan checkbox.
 
-Installation
+## Installation
 Instalasi package ini dapat dilakukan dengan perintah berikut:
+
+```bash
 npm install https://github.com/Muhaca/simpel-package.git
+```
 
-
-Usage
-Berikut adalah contoh penggunaan komponen CustomForm:
-
-Dummy Data Setup
+## Usage
 Anda perlu mendefinisikan dua array: dummyMap dan dummyItem. Keduanya akan menentukan jenis input dan properti yang digunakan di dalam form.
 
+```javascript
 import React, { useState } from 'react';
-import CustomForm from '@username/customform';
+import CustomForm from '@muhaca/sample-package';
 
 const dummyMap = [
   { label: 'single text', value: 'single_text' },
@@ -50,3 +50,24 @@ const App = () => {
 };
 
 export default App;
+```
+
+## Props
+state: Array dari field yang ingin Anda tambahkan ke form. Setiap item dalam array harus memiliki properti label, property, dan option.
+setState: Fungsi untuk memperbarui state yang berisi field form.
+propertyOption: Array yang mendefinisikan tipe input yang tersedia dalam form, seperti single_text, number, select, dll.
+Contoh Output
+Form yang dihasilkan akan dinamis berdasarkan data yang Anda berikan, dengan input tipe text, select, radio, checkbox, dll.
+
+## Customization
+Anda bisa menyesuaikan data dalam dummyMap dan dummyItem untuk membuat berbagai variasi form dengan input yang berbeda. Misalnya, Anda dapat menambahkan lebih banyak properti atau tipe input baru sesuai kebutuhan.
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
