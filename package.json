@@ -1,6 +1,6 @@
 {
   "name": "@muhaca/simple-package",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -16,7 +16,8 @@
     "url": "https://github.com/Muhaca/simpel-package.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
   },
   "keywords": [
     "react",
