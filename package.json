@@ -27,10 +27,10 @@
   ],
   "author": "Muhamad Casdi",
   "license": "MIT",
-  "description": "",
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+  "description": "CustomForm adalah komponen yang dinamis dan fleksibel untuk membuat form berdasarkan konfigurasi properti yang diberikan. Komponen ini memudahkan Anda untuk membuat form dengan berbagai tipe input seperti text, select, number, date, radio, dan checkbox.",
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
   },
   "devDependencies": {
     "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
@@ -43,6 +43,8 @@
     "postcss": "^8.4.47",
     "rimraf": "^5.0.10",
     "tailwindcss": "^3.4.13",
-    "typescript": "^5.6.2"
+    "typescript": "^5.6.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
