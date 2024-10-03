@@ -35,7 +35,7 @@ export const DragAndDrop: React.FC<DragAndDropProps> = ({ onDrop, itemList = [],
         itemList.length > 0 ? itemList.map((item, index) => (
             <div
                 key={index}
-                className={`w-full flex items-center gap-1 border rounded p-2 hover:bg-[#e0e0e0] hover:cursor-move active:cursor-grabbing bg-[#e0e0e0] ${className}`}
+                className={`w-full flex items-center gap-1 border rounded p-2 hover:bg-[#e0e0e0] hover:cursor-move active:cursor-grabbing bg-[#e0e0e0] ${className ?? ''}`}
                 draggable={!disabled}
                 onDragStart={(e) => handleDragStart(e, index)}
                 onDragOver={(e) => handleDragOver(e)}

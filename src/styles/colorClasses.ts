@@ -1,27 +1,7 @@
 export const colorClasses = {
-    'primary': {
-        border: '1px solid #0369a1',
-        backgroundColor: '#0369a1',
-        textColor: 'white'
-    },
-    'secondary': {
-        border: '1px solid #111827',
-        backgroundColor: '#111827',
-        textColor: 'white',
-    },
-    'success': {
-        border: '1px solid #22c55e',
-        backgroundColor: '#22c55e',
-        textColor: 'white',
-    },
-    'warning': {
-        border: '1px solid #ea580c',
-        backgroundColor: '#ea580c',
-        textColor: 'white'
-    },
-    'error': {
-        border: '1px solid #ef4444',
-        backgroundColor: '#ef4444',
-        textColor: 'white'
-    }
+    'primary': 'bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300',
+    'secondary': ' bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300',
+    'success': 'focus:outline-none bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300',
+    'warning': 'focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300',
+    'error': 'focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300'
 } as const

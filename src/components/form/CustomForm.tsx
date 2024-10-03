@@ -87,13 +87,13 @@ export const CustomForm: React.FC<Props> = ({ state, setState, propertyOption })
                                     onChange={(e) => handleChangeOption(e, index, idx)}
                                 />
 
-                                <Button color='error' onClick={() => handleDeleteOption(index, idx)} className='text-white'>
+                                <Button color='error' onClick={() => handleDeleteOption(index, idx)}>
                                     Delete Option
                                 </Button>
                             </div>
                         ))}
                         <div>
-                            <Button onClick={() => handleAddOption(index)} className='text-white'>
+                            <Button onClick={() => handleAddOption(index)}>
                                 Add Option
                             </Button>
                         </div>

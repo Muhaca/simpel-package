@@ -4,22 +4,16 @@ import { colorClasses } from '../styles/colorClasses';
 type Color = keyof typeof colorClasses;
 
 interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    color?: Color;
-    children?: React.ReactNode;
-    style?: React.CSSProperties;
+    color?: Color
+    children?: React.ReactNode
+    className?: string
 }
 
-export const Button: React.FC<Props> = ({ color = 'primary', children, style, ...props }) => {
+export const Button: React.FC<Props> = ({ color = 'primary', children, className, ...props }) => {
 
     return (
         <button
-            style={{
-                ...colorClasses[color],
-                borderRadius: '5px',
-                padding: '2px 5px',
-                cursor: 'pointer',
-                ...style
-            }}
+            className={`${colorClasses[color]} w-full text-white font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 ${className ?? ''}`}
             {...props}
         >
             {children}
